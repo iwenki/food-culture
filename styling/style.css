@@ -1,0 +1,7 @@
+:root{
+--body-font:'Barlow', sans-serif;
+--header-font: 'Libre Baskerville', serif;
+}
+p{
+  font-family: var(--body-font);
+}
