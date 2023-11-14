@@ -2,6 +2,16 @@
 --body-font:'Barlow', sans-serif;
 --header-font: 'Libre Baskerville', serif;
 }
+.hero{
+  background-image: url("/images/market.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding:250px;
+}
+h1{
+  font-family: var(--header-font);
+}
 p{
   font-family: var(--body-font);
 }
