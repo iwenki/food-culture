@@ -1,17 +1,67 @@
 :root{
 --body-font:'Barlow', sans-serif;
 --header-font: 'Libre Baskerville', serif;
+--box-shadow:10px 10px 25px rgba(108, 101, 101, 0.867);
+}
+.container{
+  max-width:1400px;
+  margin: 0 auto;
 }
 .hero{
-  background-image: url("/images/market.jpg");
+  background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),url("../images/market.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  padding:250px;
+  padding:250px 0;
+  color:white;
+  text-align: center;
+  margin:0 auto;
 }
-h1{
+.hero h1{
+  font-size: 70px;
+  margin:0;
+}
+.hero h3{
+  font-weight:400;
+  font-size:30px;
+  margin:10px;
+}
+.hero button{
+  border-radius: 5px;
+  box-shadow: var(--box-shadow);
+  margin:5px;
+  width:200px;
+  border:1px none;
+  padding:10px;
+  background-color: rgba(203, 71, 87, 0.746);
+}
+.hero a{
+  text-decoration: none;
+  color:rgb(237, 238, 243);
+  padding: 5px;
+  font-size: 16px;
+  transition: all 150ms ease-in-out;
+}
+.hero a:hover{
+color:black;
+font-weight:600;
+}
+h1, h3{
   font-family: var(--header-font);
 }
-p{
+p,a{
   font-family: var(--body-font);
+}
+@media(max-width:700px){
+  .hero h1{
+    font-size: 40px;
+  }
+  .hero h3{
+    font-size:18px;
+  }
+  .hero button{
+    display:block;
+    margin:10px auto;
+    width:150px;
+  }
 }
