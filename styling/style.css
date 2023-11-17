@@ -3,6 +3,9 @@
 --header-font: 'Libre Baskerville', serif;
 --box-shadow:10px 10px 25px rgba(108, 101, 101, 0.867);
 }
+body{
+  background: linear-gradient(120deg, rgb(229, 201, 210) 0%, rgb(222, 234, 222) 100%);
+}
 .container{
   max-width:1400px;
   margin: 0 auto;
