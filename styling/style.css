@@ -52,6 +52,10 @@ h1, h3{
 p,a{
   font-family: var(--body-font);
 }
+section {
+  max-width: 1200px;
+  margin: 0 auto;
+}
 footer{
   background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.7)),url("../images/footer.jpg");
   background-repeat: no-repeat;
@@ -71,9 +75,7 @@ footer .footer-notes{
   display:grid;
   grid-template-columns: 1fr 2fr 2fr;
 }
-footer div{
-  margin:40px;
-}
+
 footer ul{
   padding:0;
 }
