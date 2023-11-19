@@ -50,10 +50,10 @@ body{
 color:black;
 font-weight:600;
 }
-h1, h3{
+h1, h2, h3{
   font-family: var(--header-font);
 }
-p,a{
+p,a, h4{
   font-family: var(--body-font);
 }
 section {
@@ -73,7 +73,7 @@ section {
 .guatemala p, .spain p, .new-mex p, .tex p, .wis p{
   line-height: 1.5;
 }
-.three-column-grid{
+.three-column-grid, .first-row{
   display:grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap:20px;
@@ -83,13 +83,26 @@ section {
   border-radius: var(--border-radius);
   padding:20px;
 }
+.embeds{
+  margin-top: 25px;
+}
+.second-row{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap:20px;
+  margin-top: 10px;
+}
+.video{
+  width:100%;
+  border-radius: var(--border-radius);
+  aspect-ratio: 16/9;
+}
 .text-center{
   text-align: center;
 }
 .pan-mojado, .vermut, .chile, .fish, .crawfish{
   max-width:100%;
   border-radius: var(--border-radius);
-
 }
 footer{
   background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.7)),url("../images/footer.png");
@@ -98,6 +111,7 @@ footer{
   background-size: cover;
   color:white;
   padding: 20px 0;
+  margin-top: 25px;
 }
 footer a{
   color:white;
