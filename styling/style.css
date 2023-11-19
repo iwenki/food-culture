@@ -12,7 +12,7 @@ body{
   margin: 0 auto;
 }
 .hero{
-  background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),url("../images/market.jpg");
+  background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),url("../images/market.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -70,16 +70,29 @@ section {
   box-shadow: var(--box-shadow);
   margin-top: 25px;
 }
-.guatemala p, .spain p{
+.guatemala p, .spain p, .new-mex p, .tex p, .wis p{
   line-height: 1.5;
 }
-.pan-mojado, .vermut{
+.three-column-grid{
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap:20px;
+}
+.new-mex, .tex, .wis {
+  background-color:rgba(255, 255, 255, 0.5);
+  border-radius: var(--border-radius);
+  padding:20px;
+}
+.text-center{
+  text-align: center;
+}
+.pan-mojado, .vermut, .chile, .fish, .crawfish{
   max-width:100%;
   border-radius: var(--border-radius);
 
 }
 footer{
-  background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.7)),url("../images/footer.jpg");
+  background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.7)),url("../images/footer.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -119,5 +132,9 @@ footer li{
   footer .footer-notes{
     grid-template-columns: 1fr;
     grid-gap: 5px;
+  }
+  .guatemala,.spain, .three-column-grid{
+    grid-template-columns: 1fr;
+    grid-gap:5px;
   }
 }
