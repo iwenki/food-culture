@@ -131,7 +131,7 @@ footer li{
   margin:0;
   padding:0;
 }
-@media(max-width:750px){
+@media(max-width:800px){
   .hero h1{
     font-size: 40px;
   }
@@ -146,6 +146,7 @@ footer li{
   footer .footer-notes{
     grid-template-columns: 1fr;
     grid-gap: 5px;
+    margin:15px;
   }
   .guatemala,.spain, .three-column-grid,.first-row,.second-row{
     grid-template-columns: 1fr;
@@ -153,5 +154,8 @@ footer li{
   }
   .remove{
     display:none;
+  }
+  .tex, .wis{
+    margin-top: 10px;
   }
 }
